@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <header class="container">
+        <h1 class="hidden">Ecom Helper</h1>
+        <div class="logo">
+            <a href="#">
+                <img src="./assets/images/logo.png" />   
+            </a>
+        </div>
+        <div class="navigation">
+            <div class="burger">
+                <img src="./assets/images/menu-icon.png" />
+                <nav class="mobile hidden">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Advantages</a></li>
+                        <li><a href="#">Handling</a></li>
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Advantages</a></li>
+                    <li><a href="#">Handling</a></li>
+                    <li><a href="#">Prices</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact">
+            <button class="btn btn--blue">Contact us</button>
+        </div>
+    </header>
+    <main>
+        <section class="container general-info">
+            <h2 class="hidden">banner</h2>
+            <div class="intro">
+                <div>
+                    <p>from € 3.50 per hour</p>
+                    <h1>Virtual assistants for entrepreneurs</h1>
+                    <p>We only recruit in countries with a low cost of living. Our head office is in</p>
+                </div>
+                <div class="intro-button">
+                    <button class="btn btn--darkgrey">Make a apitment</button>
+                </div>
+            </div>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div>
+                        <h4>Step 1</h4>
+                        <p>We will discuss the requirements in a free initial consultation.</p>
+                    </div>
+                </div>
+                <div class="card card--blue">
+                    <div>
+                        <h4>Step 2</h4>
+                        <p>After a week we will suggest profiles to you.</p>
+                    </div>
+                </div>
+                <div class="card card--blue">
+                    <div>
+                        <h4>Step 3</h4>
+                        <p>You conduct remote interviews with the candidates.</p>
+                    </div>
+                </div>
+                <div class="card card--orange">
+                    <div>
+                        <h4>Step 4</h4>
+                        <p>Your ideal candidate will start working for you.</p>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <section class="container calculation">
+            <div class="calculator">
+                <div class="heading card--blue">
+                    <h4>Labor cost arbitrage calculator</h4>
+                </div>
+                <div class="ranges">
+                    <div>
+                        <label for="hours">Working hours per month</label>
+                        <div class="range-wrapper">
+                            <input type="range"  id="hours" min="0" max="200" step="1" value="194"/> 
+                            <span>194H</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="hours">Hourly wage in germany</label>
+                        <div class="range-wrapper">
+                            <input type="range" id="ger" min="0" max="50" step="0.5" value="2.5"/>
+                            <span>2.5€</span>
+                        </div>
+                    </div>    
+                    <div>
+                        <label for="hours">Hourly wage in georgia</label>
+                        <div class="range-wrapper">
+                            <input type="range"  id="geo" min="0" max="10" step="0.5" value="3.5"/>
+                            <span>3.5€</span>
+                        </div>
+                    </div>    
+                </div>
+                <div class="calculator-description">
+                    <div class="description-item">
+                        <div class="description-heading left-orange">
+                            <div>
+                                <h5>Monthly salary in Germany</h5>
+                            </div>
+                            <span>3579.82 €</span>
+                        </div>
+                        <div>
+                            <p>
+                                The costs include 20.94% incidental wage costs for the employer 
+                                (health insurance, long-term care insurance, pension insurance, 
+                                unemployment insurance, insolvency payments and statutory accident insurance)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="description-item">
+                        <div class="description-heading">
+                            <div>
+                                <h5>Monthly salary in Georgia</h5>
+                            </div>
+                            <span>571.20 €</span>
+                        </div>
+                        <div>
+                            <p>
+                                The costs include 2% incidental wage costs for the statutory pension scheme.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="description-item">
+                        <div class="description-heading">
+                            <div>
+                                <h5>My talent cost</h5>
+                            </div>
+                            <span>289 €</span>
+                        </div>
+                        <div>
+                            <p>
+                                The monthly costs for MyTalent do not apply if the employee is taken over, 
+                                which is possible at any time for a one-off payment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="description-item">
+                        <div class="description-heading">
+                            <div>
+                                <h5>Your arbitrage profit</h5>
+                            </div>
+                            <span>571,20 €</span>
+                        </div>
+                        <div>
+                            <p>
+                                * Difference between wage costs in Germany and Georgia minus the costs for MyTalent.<br>
+                                Further advantages: No recruiting costs, no separation costs, no payroll accounting 
+                                and no works council.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-wrapper">
+                <div class="card card--blue card--large">
+                    <div>
+                        <h4>Up to 10 hours / month</h4>
+                        <p>Plus labor costs (€ 3.50 - € 5.50 / hour)</p>
+                    </div>
+                    <div>
+                        <span>€ 29</span>
+                    </div>
+                </div>
+                <div class="card card--orange card--large">
+                    <div>
+                        <h4>Up to 40 hours / monthh</h4>
+                        <p>Plus labor costs (€ 3.50 - € 5.50 / hour)</p>
+                    </div>
+                    <div>
+                        <span>€ 89</span>
+                    </div>
+                </div>
+                <div class="card card--blue card--large">
+                    <div>
+                        <h4>Full time employee</h4>
+                        <p>Plus labor costs (€ 3.50 - € 5.50 / hour)</p>
+                    </div>
+                    <div>
+                        <span>€ 279</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container skilled-workers">
+            <div class="worker-details">
+                <p class="info">These platforms and tools are guaranteed to be mastered by any EcomHelper: </p>
+                <h2>Guaranteed skilled workers</h2>
+                <p class="description">Each of the employees goes through a training period where they learn the Ecommerce platforms in detail and also know how to use their most popular apps. We know the ecommerce market inside out and are always up to date with the latest tools and tricks. </p>
+                <div class="platforms">
+                    <div class="platform-category">
+                        <h5>Online Shop Plattforms:</h5>
+                        <div class="logos">
+                            <img src="./assets//images/shopify.svg" alt="shopify logo" />
+                            <img src="./assets//images/ebay.svg" alt="ebay logo" />
+                            <img src="./assets//images/amazon.svg" alt="amazon logo" />
+                        </div>
+                    </div>
+                    <div class="platform-category">
+                        <h5>Reviews:</h5>
+                        <div class="logos">
+                            <img src="./assets//images/trustpilot.svg" alt="trustpilot.svg logo" />
+                            <img src="./assets//images/loox.svg" alt="loox.svg logo" />
+                            <img src="./assets//images/alireviews.svg" alt="alireviews.svg logo" />
+                        </div>
+                    </div>
+                    <div class="platform-category">
+                        <h5>Shipping & Delivery:</h5>
+                        <div class="logos">
+                            <img src="./assets//images/dhl.svg" alt="dhl.svg logo" />
+                            <img src="./assets//images/ups.svg" alt="ups.svg logo" />
+                            <img src="./assets//images/aftership.svg" alt="aftership.svg logo" />
+                        </div>
+                    </div>
+                    <div class="platform-category ">
+                        <h5>Customer Service:</h5>
+                        <div class="logos align-left">
+                            <img src="./assets//images/gmail.svg" alt="gmail.svg logo" />
+                            <img src="./assets//images/gorgias.svg" alt="gorgias.svg logo" />
+                        </div>
+                    </div>
+                    <div class="platform-category">
+                        <h5>Email Marketing:</h5>
+                        <div class="logos align-left">
+                            <img src="./assets//images/klaviyo.svg" alt="klaviyo.svg logo" />
+                            <img src="./assets//images/omnisend.svg" alt="omnisend.svg logo" />
+                        </div>
+                    </div>
+                    <div class="platform-category">
+                        <h5>Photo Editing:</h5>
+                        <div class="logos align-left">
+                            <img src="./assets//images/photoshop.svg" alt="photoshop.svg logo" />
+                            <img src="./assets//images/canva.svg" alt="canva.svg logo" />
+                        </div>
+                    </div>
+                    <div class="platform-category">
+                        <h5>Product Research:</h5>
+                        <div class="logos align-left">
+                            <img src="./assets//images/junglescout.svg" alt="junglescout.svg logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./assets/images/woman.png" alt="woman" />
+            </div>
+        </section>
+        <section class="virtual-assistant container-fluid">
+            <div class="container">
+                <div class="heading">
+                    <p class="note">These platforms and tools</p>
+                    <h2>What can a virtual assistant <span>do</span> for me?</h2>
+                </div>
+                <div class="supports">
+                    <div>
+                        <h5>Support</h5>
+                        <p>Answering customer inquiries by phone, email or chat.</p>
+                    </div>
+                    <div>
+                        <h5>Data acquisition</h5>
+                        <p>Creation and maintenance of databases.</p>
+                    </div>
+                    <div>
+                        <h5>Research</h5>
+                        <p>Sourcing and research via internet and telephone.</p>
+                    </div>
+                    <div>
+                        <h5>SMM support</h5>
+                        <p>Social media management on Facebook, Instagram, etc.</p>
+                    </div>
+                    <div>
+                        <h5>B2B sales</h5>
+                        <p>Appointments, qualifying initial contacts, reactivating old customers.</p>
+                    </div>
+                    <div>
+                        <h5>Software dev</h5>
+                        <p>Note: English speaking staff only. To the MyTalent IT page</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages container">
+            <div class="heading">
+                <p class="note">These platforms and tools</p>
+                <h2>What can a virtual assistant <span>do</span> for me?</h2>
+            </div>
+            <div class="advantages-wrapper">
+                <div class="before-orange">
+                    <h5>Running costs stay low</h5>
+                    <p>With us you save money every month that you can reinvest and expand in ads or other areas of your business instead. In contrast, Ecomhelper receive good to very good salaries according to their local location. Win-win for both parties</p>
+                </div>
+                <div class="before-blue">
+                    <h5>Start working immediately</h5>
+                    <p>Employees can start working right away without much training. They have already been deeply trained in the most common OnlineShop platforms, such as Shopify, Amazon, Ebay and their tools and will even possibly show you one or two new, usefull</p>
+                </div>
+                <div class="before-blue">
+                    <h5>Running costs stay low</h5>
+                    <p>With us you save money every month that you can reinvest and expand in ads or other areas of your business instead. In contrast, Ecomhelper receive good to very good salaries according to their local location. Win-win for both parties</p>
+                </div>
+                <div class="before-blue">
+                    <h5>No additional tax effort</h5>
+                    <p>You will receive a proper invoice from us every month which is taxable with the reverse charge procedure. Your tax advisor will happily do this for you. You will receive a monthly invoice from us which is to be taxed with the reverse charge procedure. Your tax advisor will happily take care of this for you. We take care of everything else that arises: wage, social security, health insurance and work replacement.</p>
+                </div>
+            </div>
+        </section>
+        <section class="my-talent container">
+            <div class="talent-image">
+                <img src="assets/images/woman.png" />
+            </div>
+            <div>
+                <div class="heading">
+                    <p class="note">These platforms and tools</p>
+                    <h5>Why MyTalent?</h5>
+                </div>
+                <div class="talent-content">
+                    <div class="talent-list">
+                        <ul>
+                            <li class="active" data-index="0">Cost efficient</li>
+                            <li data-index="1">German speaking employees only</li>
+                            <li data-index="2">Transparency (open book)</li>
+                            <li data-index="3">We are there</li>
+                        </ul>
+                    </div>
+                    <div class="talent-descriptions">
+                        <ul>
+                            <li>
+                                <h4>Cost efficient</h4>
+                                <p>
+                                    We only provide German-speaking virtual assistants. The employees are either emigrants from D / A / CH or they have studied or worked in D / A / CH and then returned to their homeland. Of course, other language skills such as English or Russian are also possible on request.
+                                </p>
+                                <div class="actions">
+                                    <button class="btn btn--darkgrey">Make a apitment</button>
+                                    <button class="btn btn--darkgrey">Request a quote</button>
+                                </div>
+                            </li>
+                            <li class="hidden">
+                                <h4>German speaking employees only</h4>
+                                <p>
+                                    We only provide German-speaking virtual assistants. The employees are either emigrants from D / A / CH or they have studied or worked in D / A / CH and then returned to their homeland. Of course, other language skills such as English or Russian are also possible on request.
+                                </p>
+                                <div class="actions">
+                                    <button class="btn btn--darkgrey">Make a apitment</button>
+                                    <button class="btn btn--darkgrey">Request a quote</button>
+                                </div>
+                            </li>
+                            <li class="hidden">
+                                <h4>Transparency (open book)</h4>
+                                <p>
+                                    We only provide German-speaking virtual assistants. The employees are either emigrants from D / A / CH or they have studied or worked in D / A / CH and then returned to their homeland. Of course, other language skills such as English or Russian are also possible on request.
+                                </p>
+                                <div class="actions">
+                                    <button class="btn btn--darkgrey">Make a apitment</button>
+                                    <button class="btn btn--darkgrey">Request a quote</button>
+                                </div>
+                            </li>
+                            <li class="hidden">
+                                <h4>We are there</h4>
+                                <p>
+                                    We only provide German-speaking virtual assistants. The employees are either emigrants from D / A / CH or they have studied or worked in D / A / CH and then returned to their homeland. Of course, other language skills such as English or Russian are also possible on request.
+                                </p>
+                                <div class="actions">
+                                    <button class="btn btn--darkgrey">Make a apitment</button>
+                                    <button class="btn btn--darkgrey">Request a quote</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container customer-support">
+            <div class="faq">
+                <div class="faq-header card--blue">
+                    <h2 class="heading">Frequently asked Questions</h2>
+                </div>
+                <div class="faq-list">
+                    <ul>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>ARE 2.50 € / HOUR DUMPING WAGES?</h6>
+                                <button>-</button>
+                            </div>
+                            <div class="question-body">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>DO I HAVE TO PAY GERMAN SOCIAL SECURITY CONTRIBUTIONS?</h6>
+                                <button>+</button>
+                            </div>
+                            <div class="question-body closed">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>DO I HAVE TO PAY VAT?</h6>
+                                <button>+</button>
+                            </div>
+                            <div class="question-body closed">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>HOW HIGH ARE THE ANCILLARY WAGE COSTS?</h6>
+                                <button>+</button>
+                            </div>
+                            <div class="question-body closed">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>WHO PAYS THE WAGE TAX?</h6>
+                                <button>+</button>
+                            </div>
+                            <div class="question-body closed">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>HOW DO I PAY SALARIES IN GEORGIA?</h6>
+                                <button>+</button>
+                            </div>
+                            <div class="question-body closed">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>WHAT SHOULD BE CONSIDERED IN THE EVENT OF A TERMINATION?</h6>
+                                <button>+</button>
+                            </div>
+                            <div class="question-body closed">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>CAN I ALSO EMPLOY THE VIRTUAL EMPLOYEE DIRECTLY?</h6>
+                                <button>+</button>
+                            </div>
+                            <div class="question-body closed">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="question">
+                            <div class="question-header">
+                                <h6>WHERE DO THE EMPLOYEES WORK?</h6>
+                                <button>+</button>
+                            </div>
+                            <div class="question-body closed">
+                                <p>
+                                    We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an hourly wage of around € 1.90. We recommend paying € 2.50 as an entry-level wage, which can increase accordingly if you perform well. Ultimately, our customers pay the employees themselves and have the option to pay more at any time (with the appropriate performance).
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="report">
+                <div class="heading">
+                    <p class="note">Customers report on our cooperation.</p>
+                    <h3>Experience with MyTalent</h3>
+                </div>
+                <div class="profile-list">
+                    <div class="profile">
+                        <img src="./assets/images/man.png" alt="Man" />
+                        <a href="#" class="blue-text">Watch video</a>
+                        <h4>Anton Herrmann</h4>
+                        <span>Spacegoats</span>
+                    </div>
+                    <div class="profile">
+                        <img src="./assets/images/man.png" alt="Man" />
+                        <a href="#" class="blue-text">Watch video</a>
+                        <h4>Anton Herrmann</h4>
+                        <span>Spacegoats</span>
+                    </div>
+                    <div class="profile">
+                        <img src="./assets/images/man.png" alt="Man" />
+                        <a href="#" class="blue-text">Watch video</a>
+                        <h4>Anton Herrmann</h4>
+                        <span>Spacegoats</span>
+                    </div>
+                    <div class="profile">
+                        <img src="./assets/images/man.png" alt="Man" />
+                        <a href="#" class="blue-text">Watch video</a>
+                        <h4>Anton Herrmann</h4>
+                        <span>Spacegoats</span>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <span></span>
+                    <span class="opasity-10"></span>
+                </div>
+            </div>
+        </section>
+        <section class="animation container-fluid">
+            <div class="container">
+                <div class="heading">
+                    <p class="note">Customers report on our cooperation.</p>
+                    <h3>Experience with MyTalent</h3>
+                </div>
+            </div>
+            <div class="relative-wrapper">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <p>Spacegoats</p>
+                        <h3>Anton Herrmann</h3>
+                        <div class="profile">
+                            <div class="avatar"></div>
+                            <p>We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an </p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <p>Spacegoats</p>
+                        <h3>Anton Herrmann</h3>
+                        <div class="profile">
+                            <div class="avatar"></div>
+                            <p>We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an </p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <p>Spacegoats</p>
+                        <h3>Anton Herrmann</h3>
+                        <div class="profile">
+                            <div class="avatar"></div>
+                            <p>We only recruit in Georgia. The median income locally is $ 370 per month. (Source: World Bank) For a 40 hour week, this corresponds to an </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer container-fluid">
+            <div class="container">
+                <div class="footer-header">
+                    <img src="./assets/images/mytalent.png" alt="MyTalent"/>
+                </div>
+                <div class="footer-content">
+                    <div class="contact">
+                        <p>Modi Modi Modi LLC</p>
+                        <address>2/2 Ilia Chavchavadze Avenue, Tbilisi, Georgia</address>
+                        <a href="#">Google Maps</a>
+                        <p>
+                            DE<span> +49-40-22859351</span>
+                            GE<span> +995-32-2054796</span>
+                        </p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn--darkgrey">Make a apitment</button>
+                    </div>
+                    <div class="sitemap">
+                        <div class="sitemap-column hidden">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sitemap-column">
+                            <ul>
+                                <li>
+                                    <a href="#">Application</a>
+                                </li>
+                                <li>
+                                    <a href="#">Free online course</a>
+                                </li>
+                                <li>
+                                    <a href="#">IT outsourcing in Georgia</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Podcast</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sitemap-column-group">
+                            <div class="sitemap-column">
+                                <ul>
+                                    <li>
+                                        <a href="#">Net wage calculator</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Social responsibility</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Co-working in our office</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Careers at MyTalent</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sitemap-column">
+                                <ul>
+                                    <li>
+                                        <a href="#">For customers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">imprint</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Data protection</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                       
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>All rights reserved copyright statement</p>
+                </div>
+            </div>
+        </section>
+    </footer> 
+</body>
+</html>

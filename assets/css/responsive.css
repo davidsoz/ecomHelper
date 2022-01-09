@@ -1,0 +1,313 @@
+@media screen and (min-width:641px) {
+    .footer-content .sitemap-column {
+        width: 33%;
+    }
+    .footer-content .sitemap-column-group {
+        flex-direction: row;
+        gap: 30px;
+        width: 66%;
+    }
+
+    .footer-content .sitemap-column-group .sitemap-column {
+        width: 50%;
+    }
+
+    header .navigation .burger nav.mobile ul {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:769px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .general-info .cards-wrapper {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: 25%;
+    }
+
+    .my-talent .talent-descriptions .actions {
+        flex-direction: row;
+    }
+
+    .customer-support .profile-list {
+        gap: 90px;
+        justify-content: center;
+    }
+
+    
+}
+
+@media screen and (min-width:1025px) {
+    header .navigation {
+        flex-grow: 1;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header .contact {
+        display: block;
+    }
+
+    header .burger {
+        display: none;
+    }
+
+    section.general-info {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .general-info .intro {
+        padding-top: 80px;
+        width: calc(55% - 50px);
+    }
+
+    .general-info .intro h1 {
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .intro div p:last-child {
+        margin-top: 10px;
+    }
+
+    .general-info .intro div:first-child {
+        padding-left: 20px;
+        border-left: 30px solid var(--color-orange);
+    }
+
+    .general-info .intro-button {
+        margin-top: 40px;
+        border-left: 50px solid #fff;
+    }
+
+    .general-info .cards-wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+        width: calc(45% - 50px);
+    }
+
+    .card {
+        padding: 30px 30px 55px;
+        width: calc(50% - 15px);
+    }
+
+    .calculation {
+        display: flex;
+        gap: 100px;
+    }
+
+    .calculation .calculator {
+        width: calc(55% - 50px);
+    }
+
+    .calculation .cards-wrapper {
+        margin-top: 0;
+        width: calc(45% - 50px);
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .ranges, .calculator-description {
+        margin-left: 30px;
+    }
+
+    section.skilled-workers {
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+    }
+    
+    .skilled-workers h2 {
+        margin-top: 20px;
+    }
+    
+    .skilled-workers .description {
+        margin-top: 30px;
+    }
+
+    .skilled-workers .platforms {
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .skilled-workers .logos img {
+        height: 20px;
+    }
+
+    .skilled-workers .image {
+        display: block;
+    }
+
+    .virtual-assistant {
+        padding: 30px 0 50px;
+        margin-top: 80px;
+        background-color: rgba(26, 117, 232, 0.02);
+    }
+
+    .virtual-assistant .container .heading h2 {
+        margin-top: 20px;
+    }
+    .supports {
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .supports>div{
+        width: calc(30% - 15px);
+    }
+
+    .advantages {
+        margin-top: 150px;
+    }
+
+    .advantages .advantages-wrapper {
+        margin-top: 50px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .advantages .advantages-wrapper div {
+        width: calc(50% - 70px);
+    }
+
+    .my-talent {
+        display: flex;
+        gap: 50px;
+    }
+
+    .my-talent .talent-image {
+        display: block;
+    }
+
+    .my-talent .talent-content {
+        gap: 50px;
+    }
+
+    .my-talent .talent-descriptions .actions {
+        flex-direction: column;
+    }
+
+    .customer-support {
+        margin-top: 150px;
+        display: flex;
+        gap: 100px;
+    }
+
+    .customer-support .faq {
+        width: calc(55% - 50px);
+    }
+
+    .customer-support .report {
+        margin: 0;
+        width: calc(45% - 50px);
+
+    }
+
+    .customer-support .faq-list {
+        margin-top: 50px;
+    }    
+
+    .customer-support .profile-list {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .relative-wrapper {
+        height: 307px;
+        text-align: left;
+    }
+
+    .animation .slider-wrapper .slider {
+        width: 488px;
+        padding: 40px 65px 75px;
+        margin-left: 22px;
+    }
+
+    .relative-wrapper .slider-wrapper {
+        left: 3%;
+        width: 200%;
+    }
+
+    
+}
+
+@media screen and (min-width:1281px) {
+    header .logo {
+        width: 150px;
+    }
+
+    .my-talent {
+        gap: 100px;
+    }
+
+    .my-talent .talent-content {
+        margin-top: 50px;
+        gap: 100px;
+    }
+
+    .my-talent .talent-descriptions .actions {
+        flex-direction: row;
+    }
+
+    .customer-support .profile-list {
+        gap: 25px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .footer-content .hidden {
+        display: block;
+    }
+
+    .footer-content .contact {
+        width: 180px;
+        flex-shrink: 0;
+    }
+
+    .footer-content .btn-wrapper {
+        order: 1;
+        margin-top: 65px;
+    }
+
+    .footer-content .sitemap {
+        flex-grow: 1;
+    }
+
+    .footer-content .sitemap-column {
+        width: auto;
+    }
+    .footer-content .sitemap-column-group {
+        width: 50%;
+        gap: 60px;
+    } 
+}
+
+@media screen and (min-width:1441px) {
+    :root {
+        font-size: 16px;
+    }
+
+
+    .general-info .cards-wrapper {
+        gap: 40px;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+}
